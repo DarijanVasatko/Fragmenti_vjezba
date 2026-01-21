@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        // Zadatak 2 - FrameLayout + Fragmenti
+
 
 
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
@@ -66,9 +66,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        // Zadatak 3 - ViewPager + Fragmenti
-
-
         ViewPager viewPager = findViewById(R.id.viewpager);
         SampleFragmentPageAdapter adapter = new SampleFragmentPageAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapter);
@@ -76,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    // Metoda za Zadatak 2 - postavljanje fragmenta u FrameLayout
     private void setFrame(int position) {
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
